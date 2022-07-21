@@ -6,7 +6,6 @@ input = input.lower()
 
 stat = {}
 
-# Interate every line.
 for i in range(0, len(input)):
     if input[i] not in stat:
         stat[input[i]] = 0
