@@ -1,0 +1,8 @@
+q = ['CL,105.3', 'GC,1866.40', 'SI,22.85', 'CL,105.4', 'NG,7.525', 'CL,105.6', 'GC,1886.80', 'NG,7.535']
+# New queue should be
+new_q = ['CL,105.6', 'GC,1886.80', 'SI,22.85', 'NG,7.535']
+# and as each price is printed out, remove that price update
+Crude Oil(CL) 105.6, new_q = ['GC,1886.80', 'SI,22.85', 'NG,7.535']
+Gold(GC) 1886.80, new_q = ['SI,22.85', 'NG,7.535']
+Silver(SI) 22.85, new_q = ['NG,7.535']
+Natural Gas(NG) 7.535, new_q = []
