@@ -4,6 +4,9 @@ eggs.sort(key = lambda s: s[0])
 
 eggs.sort(key = lambda s: s[1])
 
+baskets = []
+
 for i in range(0, len(eggs), 3):
-    basket = [eggs[i], eggs[i+1], eggs[i+2]]
-    print(basket, end=' ')
+    baskets.append([eggs[i], eggs[i+1], eggs[i+2]])
+
+print(baskets)
