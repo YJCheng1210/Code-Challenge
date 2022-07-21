@@ -2,8 +2,6 @@
 
 expressions = [5, '4+3', '3', '2*2', '2**3', '12/6', 1, '9-4']
 
-indexes = ['0', '1', '2', '3', '4', '5', '6', '7']
-
 expressions = [[v, v] if isinstance(v,int) else [v, eval(v)] for v in expressions]
 
 expressions = sorted(expressions, key=lambda e:e[1])
