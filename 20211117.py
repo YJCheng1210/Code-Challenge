@@ -14,7 +14,7 @@ for pair in interactions:
     people.append(pair[0])
     people.append(pair[1])
 
-people = set(people)
+people = sorted(set(people))
 
 friend_dict= {}
 
