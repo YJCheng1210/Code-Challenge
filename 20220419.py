@@ -6,11 +6,11 @@ clean = []
 for s in data:
     if s.isdigit():
         clean.append(s)
-str = ''
+sstr = ''
 for s in clean:
-    str += s
+    sstr += s
 clean_data = []
-for i in range(0, len(str), 3):
-    clean_data.append(str[i:i+3])
+for i in range(0, len(sstr), 3):
+    clean_data.append(sstr[i:i+3])
 
 print(clean_data)
